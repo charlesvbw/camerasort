@@ -9,7 +9,6 @@ for file in os.listdir(path):
     file_day = file[15:17]
     file_month = file[13:15]
     folder = file_month + "-" + file_day
-    print(folder)
     if os.path.isdir(path + '/' + folder):
         os.rename(path + '/' + file,path + '/' + folder + '/' + file)
     else:
